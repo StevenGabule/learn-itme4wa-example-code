@@ -9,6 +9,7 @@ import {
   View,
   Image,
 } from "react-native";
+import { SettingsScreen } from './screens/SettingsScreen';
 
 interface UserCardProps {
   id: string;
@@ -110,28 +111,30 @@ export default function App() {
     // ...
   };
 
-  return (
-    <View style={styles.container}>
-      {users.map((currentUser) => (
-        <UserCard
-          id={currentUser.id}
-          key={currentUser.id}
-          name={currentUser.name}
-          email={currentUser.email}
-          onPress={handleOnPress}
-          isActive={currentUser.isActive}
-        />
-      ))}
+  // return (
+  //   <View style={styles.container}>
+  //     {users.map((currentUser) => (
+  //       <UserCard
+  //         id={currentUser.id}
+  //         key={currentUser.id}
+  //         name={currentUser.name}
+  //         email={currentUser.email}
+  //         onPress={handleOnPress}
+  //         isActive={currentUser.isActive}
+  //       />
+  //     ))}
 
-      <Container>
-        <View>
-          <Text>
-            Hello from {user?.name} {email} {loading}
-          </Text>
-        </View>
-      </Container>
-    </View>
-  );
+  //     <Container>
+  //       <View>
+  //         <Text>
+  //           Hello from {user?.name} {email} {loading}
+  //         </Text>
+  //       </View>
+  //     </Container>
+  //   </View>
+  // );
+
+  return <SettingsScreen />
 }
 
 const styles = StyleSheet.create<Styles>({
