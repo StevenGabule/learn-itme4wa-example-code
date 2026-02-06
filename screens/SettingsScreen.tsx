@@ -1,5 +1,6 @@
 import React from 'react';
-import { SafeAreaView, Text, Switch, View, StyleSheet } from 'react-native';
+import { Text, Switch, View, StyleSheet } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { Accordion } from '../components/Accordion';
 
 export const SettingsScreen: React.FC = () => {

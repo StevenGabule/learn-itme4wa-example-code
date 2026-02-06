@@ -10,6 +10,9 @@ import {
   Image,
 } from "react-native";
 import { SettingsScreen } from './screens/SettingsScreen';
+import { InboxScreen } from './screens/InboxScreen';
+import { UserProfileScreen } from './screens/UserProfileScreen';
+import { RegistrationScreen } from './screens/RegistrationScreen';
 
 interface UserCardProps {
   id: string;
@@ -134,7 +137,10 @@ export default function App() {
   //   </View>
   // );
 
-  return <SettingsScreen />
+  // return <SettingsScreen />
+  // return <InboxScreen />
+  // return <UserProfileScreen />
+  return <RegistrationScreen />
 }
 
 const styles = StyleSheet.create<Styles>({
